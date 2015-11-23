@@ -4,11 +4,27 @@
         <meta charset="UTF-8">
         <title></title>
         <link rel="stylesheet" href="/styles/style.css">
-	<script type="text/javascript" src="/vendors/jquery.min.js"></script>
-	<script type="text/javascript" src="/vendors/handlebars.min.js"></script>
+    	<script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    	<script type="text/javascript" src="/vendors/handlebars.min.js"></script>
         <script type="text/javascript" src="/scripts/app.js"></script>
+        <link rel="icon" href="favicon.png" type="image/png">
     </head>
     <body>
+        <p class="headline">Eta Favorite Movies</p>
+        <div class="container">
+            <script id="person-template" type="text/x-handlebars-template">
+                <div class="etamember">
+                    <div class="name">{{firstName}} {{lastName}}</div>
+                    <div class="movie">{{#each favoriteMovies}}
+                    <p>{{movieName}} {{releaseYear}}</p>
+                    {{/each}}
+                    </div>
+                </div>
+            </script>
+        </div>
+        <div class="button">
+            <button type="button" name="previous" class="previous">Previous</button>
+            <button type="button" name="next" class="next">Next</button>
+        </div>
     </body>
-
 </html>

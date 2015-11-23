@@ -1,0 +1,47 @@
+.buttons .previous {
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+
+.buttons .next {
+	width: 50%;
+	text-align: center;
+	float: right;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+.headline {
+	font-size: 22px;
+
+}
+
+.etamember .movie {
+	width: 200px;
+	margin: 5px;
+	background-color: gray;
+	padding: 10px;
+}
+
+.etamember .name {
+	width: 200px;
+	margin: 5px;
+	background-color: red;
+	padding: 10px;
+	text-align: center;
+}
+
+.previous:hover {
+	border: 1px solid #a4a4a4;
+	border-top: 2px solid #b2b2b2;
+	background-color: #efefef;
+}
+.next:hover {
+	border: 1px solid #a4a4a4;
+	border-top: 2px solid #b2b2b2;
+	background-color: #efefef;
+}
